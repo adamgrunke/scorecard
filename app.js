@@ -11,15 +11,14 @@
     //     'Created react node and rendered it into the DOM'
     // );
     
-console.log(title)
-const title = <h1>React Element</h1>
-const desc = <p>Created react node and rendered it into the DOM </p>
+const title = 'React Element'
+const desc = 'Created react node and rendered it into the DOM'
 
-const header = React.createElement(
-    'header',
-    null,
-    title,
-    desc
+const header = (
+    <header>
+        <h1>{title}</h1>
+        <p> {desc} </p>
+    </header>
 );
 
 ReactDOM.render(
